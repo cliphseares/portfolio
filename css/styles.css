@@ -5928,18 +5928,15 @@ textarea.form-control-lg {
 .carousel-indicators {
   position: absolute;
   right: 0;
-  bottom: 0;
   left: 0;
   z-index: 2;
   display: flex;
   justify-content: center;
-  padding: 0;
+  padding-top: 10px;
   margin-right: 15%;
-  margin-bottom: 1rem;
   margin-left: 15%;
-  list-style: none;
-}
-.carousel-indicators [data-bs-target] {
+  bottom: -30px; /* Moves indicators further down */
+}.carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
   width: 30px;
@@ -5949,7 +5946,7 @@ textarea.form-control-lg {
   margin-left: 3px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #fff;
+  background-color: #007bff;
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
@@ -8306,7 +8303,7 @@ textarea.form-control-lg {
 
 .bg-light {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity))!important;
 }
 
 .bg-dark {
@@ -11772,7 +11769,7 @@ body {
 }
 
 <!-- Custom CSS for Bigger and Responsive Carousel -->
-<style>
+
     .certificate-img {
         width: 100%; /* Ensures images are fully responsive */
         max-width: 600px; /* Controls max width */
@@ -11790,20 +11787,4 @@ body {
     .card {
         max-width: 1000px; /* Increases overall card width */
     }
-</style>
 
-.img-fluid {
-  transition: transform 0.3s ease-in-out; /* Smooth transition */
-}
-
-.img-fluid:hover {
-  transform: scale(1.1); /* Increases size by 10% */
-}
-
-.grow-on-hover {
-  transition: transform 0.3s ease-in-out;
-}
-
-.grow-on-hover:hover {
-  transform: scale(1.1);
-}
